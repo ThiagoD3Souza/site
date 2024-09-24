@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Relacionado</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Links Relacionados</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('./imagem/rio-de-janeiro2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        header, main, footer {
+            text-align: center;
+        }
+        h1 {
+            color: #1a5f7a;
+        }
+        h2 {
+            color: #2e8bc0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #1a5f7a;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<style>
-    body {
-        width:100vh;
-        height: 100vw;    
-        background-image: url('./imagem/rio-de-janeiro2.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat; 
-  }
-</style>
 <body>
-    <header>
-      <h1>Links relacionados ao site</h1>
-    </header>
-    <main>
-      <h2>Sites sobre outros pontos turisticos que talvez lhe interessem</h2>
-      <ul>
-        <li><a href="https://feriasvivas.org.br/escolha-o-seu-destino-com-seguranca/?gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6OFjGV9qUnbxv5UrwQ7goWhsEGCyXPLXeUvX0WVth3uDeDOKX5cFaAaAmsJEALw_wcB" target="_blank">Lugares para viajar no Brasil</a></li><br>
-        <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiVpfnMktyIAxWCR_8BHbZmPYYYABAAGgJtZA&co=1&ase=2&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6PXWoTkyYVft0gQvjTLEj-v8j4VLshDe4FUrc8NnISlmwYg_I_LDbUaAs_1EALw_wcB&ohost=www.google.com&cid=CAESVeD2b8j2-lJxk_YVDzCrcgqMreeuzOl6ZTFCQWqXBnl42pgK95Yx0m3bZYNsVJGEKC7Qdq0bj3gwPKW-UvIa6H1h-1yIAdPoxYJAUoYXdVesTbvGoI4&sig=AOD64_3I3sp7Azq8IOnWWsTsOpXc8HLB3Q&q&nis=4&adurl&ved=2ahUKEwiU0u3MktyIAxVmqZUCHeZMME8Q0Qx6BAgVEAM" target="_blank">Instituto Semeia</a></li><br>
-        <li><a href="https://www.tripadvisor.com.br/Attractions-g294280-Activities-Brazil.html" target="_blank"> Tripadvisor </a></li><br>
-        <li><a href="https://magazine.zarpo.com.br/pontos-turisticos-no-brasil-para-viajar/" target="_blank">Zarpo Magazine</a></li><br>
-        <li><a href="https://www.hoteltarobafoz.com.br/principais-pontos-turisticos-do-brasil/" target="_blank">Hotel Fontes Do Iguaçu</a></li><br>
-        <li><a href="https://www.smilesviagens.com.br/blog/post/4" target="_blank">Smiles Viagens</a></li>
-      </ul>
-    </main>
-    <footer>
-        <br>
-        <a href="index.html">Pagina Inicial</a>
-      <p>&copy; 2024 Links Interessantes</p>
-    </footer>
-  </body>
-</html>
+    <div class="container">
+        <header>
+            <h1>Links relacionados ao site</h1>
+        </header>
+        <main>
+            <h2>Sites sobre outros pontos turísticos que talvez lhe interessem</h2>
+            <ul>
+                <li><a href="https://feriasvivas.org.br/escolha-o-seu-destino-com-seguranca/?gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6OFjGV9qUnbxv5UrwQ7goWhsEGCyXPLXeUvX0WVth3uDeDOKX5cFaAaAmsJEALw_wcB" target="_blank">Lugares para viajar no Brasil</a></li>
+                <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiVpfnMktyIAxWCR_8BHbZmPYYYABAAGgJtZA&co=1&ase=2&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6PXWoTkyYVft0gQvjTLEj-v8j4VLshDe4FUrc8NnISlmwYg_I_LDbUaAs_1EALw_wcB&ohost=www.google.com&cid=CAESVeD2b8j2-lJxk_YVDzCrcgqMreeuzOl6ZTFCQWqXBnl42pgK95Yx0m3bZYNsVJGEKC7Qdq0bj3gwPKW-UvIa6H1h-1yIAdPoxYJAUoYXdVesTbvGoI4&sig=AOD64_3I3sp7Azq8IOnWWsTsOpXc8HLB3Q&q&nis=4&adurl&ved=2ahUKEwiU0u3MktyIAxVmqZUCHeZMME8Q0Qx6BAgVEAM" target="_blank">Instituto Semeia</a></li>
+                <li><a href="https://www.tripadvisor.com.br/Attractions-g294280-Activities-Brazil.html" target="_blank">Tripadvisor</a></li>
+                <li><a href="https://magazine.zarpo.com.br/pontos-turisticos-no-brasil-para-viajar/" target="_blank">Zarpo Magazine</a></li>
+                <li><a href="https://www.hoteltarobafoz.com.br/principais-pontos-turisticos-do-brasil/" target="_blank">Hotel Fontes Do Iguaçu</a></li>
+                <li><a href="https://www.smilesviagens.com.br/blog/post/4" target="_blank">Smiles Viagens</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p><a href="index.html">Página Inicial</a></p>
+            <p>&copy; 2024 Links Interessantes</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,95 +1,144 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Pontos Turísticos do Brasil</title>
     <link rel="stylesheet" href="CSS/style.css">
-  </head>
-  <style>
+    <style>
         body {
-            width:100vh;
-            height: 100vw;    
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
             background-image: url('./imagem/rio-de-janeiro2.jpg');
-            background-size: 100%;
-            background-repeat: no-repeat; 
-      }
-  </style>
-  <body >
-    <header >
-      <h1><img src="imagem/uniube.png"  width="100" alt="Logotipo Uniube" style="float:left"><br>Os 10 Melhores Pontos Turísticos do Brasil</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="rio-de-janeiro.html">Rio de Janeiro</a></li>
-        <li><a href="ouro-preto.html">Ouro Preto</a></li>
-        <li><a href="cataratas-do-iguaçu.html">Cataratas do Iguaçu</a></li>
-        <li><a href="floresta-amazonica.html">Floresta Amazônica</a></li>
-        <li><a href="brasilia.html">Brasília</a></li>
-        <li><a href="fernando-de-noronha.html">Fernando de Noronha</a></li>
-        <li><a href="salvador.html">Salvador</a></li>
-        <li><a href="chapada-diamantina.html">Chapada Diamantina</a></li>
-        <li><a href="bonito.html">Bonito</a></li>
-        <li><a href="lençóis-maranhenses.html">Lençóis Maranhenses</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="rio-de-janeiro">
-        <h2>Rio de Janeiro</h2>
-        <p>Rio de Janeiro é uma cidade litorânea localizada no estado do Rio de Janeiro, no Brasil.</p>
-        <img src="imagem\rio-de-janeiro.jpg" alt="Rio de Janeiro">
-      </section>
-      <section id="ouro-preto">
-        <h2>Ouro Preto</h2>
-        <p>Ouro Preto é uma cidade histórica localizada no estado de Minas Gerais, no Brasil.</p>
-        <img src="imagem\ouro-preto.jpg" alt="Ouro Preto">
-      </section>
-      <section id="cataratas-do-iguaçu">
-        <h2>Cataratas do Iguaçu</h2>
-        <p>As Cataratas do Iguaçu As Cataratas do Iguaçu impressionam com suas gigantescas quedas d'água, natureza exuberante e paisagens deslumbrantes.</p>
-        <img src="imagem\cataratas-do-iguaçu.jpg" alt="Cataratas do Iguaçu">
-      </section>
-      <section id="floresta-amazonica">
-        <h2>Floresta Amazonica</h2>
-        <p>A Floresta Amazônica é um vasto bioma tropical, rica em biodiversidade, abrigando milhares de espécies e influenciando o clima global.</p>
-        <img src="imagem\floresta-amazonica.jpg" alt="Floresta Amazonica">
-      </section>
-      <section id="brasilia">
-        <h2>brasilia</h2>
-        <p>Brasília, capital do Brasil, destaca-se por sua arquitetura moderna, planejamento urbano inovador e obras de Oscar Niemeyer, símbolo do progresso.</p>
-        <img src="imagem\brasilia.jpg" alt="brasilia">
-      </section>
-      <section id="fernando-de-noronha">
-        <h2>Fernando de Noronha</h2>
-        <p>Fernando de Noronha é um arquipélago paradisíaco, famoso por suas praias de águas cristalinas, rica vida marinha e paisagens preservadas.</p>
-        <img src="imagem\fernando-de-noronha.jpg" alt="Fernando de Noronha">
-      </section>
-      <section id="salvador">
-        <h2>Salvador</h2>
-        <p>Salvador, capital da Bahia, encanta com seu patrimônio histórico, cultura afro-brasileira vibrante, culinária marcante e o famoso Carnaval.</p>
-        <img src="imagem\salvador.jpg" alt="salvador">
-      </section>
-      <section id="chapada-diamantina">
-        <h2>Chapada Diamantina</h2>
-        <p>A Chapada Diamantina é um parque nacional com cachoeiras impressionantes, grutas fascinantes, trilhas desafiadoras e paisagens de tirar o fôlego no coração da Bahia.</p>
-        <img src="imagem\chapada-diamantina.jpg" alt="Chapada Diamantina">
-      </section>
-      <section id="bonito">
-        <h2>Bonito</h2>
-        <p>Bonito, no Mato Grosso do Sul, é famoso por suas águas cristalinas, cavernas submersas, rios repletos de peixes e ecoturismo sustentável.</p>
-        <img src="imagem\bonito.jpg" alt="bonito">
-      </section>
-      <section id="lençóis-maranhenses">
-        <h2>Lençóis Maranhenses</h2>
-        <p>Os Lençóis Maranhenses são um deserto de dunas brancas com lagoas cristalinas, criando um cenário único e impressionante no litoral do Maranhão.</p>
-        <img src="imagem\lençóis-maranhenses.jpg" alt="Lençóis Maranhenses">
-      </section>
-    </main>
-    <footer>
-      <br>
-        <a href="contato.html">Contatos </a>
-        <a href="links.html">Links </a>
-        <a href="fotos.html">Fotos </a>
-      <p>&copy; 2024 10 Pontos Turísticos do Brasil</p>
-      <a href="https://youtu.be/dQw4w9WgXcQ?t=84" target=”_blank”>Thiago Daniel De Souza RA:5157431</a></li>
-    </footer>
-  </body>
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, nav, main, footer {
+            width: 100%;
+        }
+        header {
+            text-align: center;
+        }
+        header img {
+            float: none;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagem/uniube.png" width="100" alt="Logotipo Uniube">
+            <h1>Os 10 Melhores Pontos Turísticos do Brasil</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="rio-de-janeiro.html">Rio de Janeiro</a></li>
+                <li><a href="ouro-preto.html">Ouro Preto</a></li>
+                <li><a href="cataratas-do-iguaçu.html">Cataratas do Iguaçu</a></li>
+                <li><a href="floresta-amazonica.html">Floresta Amazônica</a></li>
+                <li><a href="brasilia.html">Brasília</a></li>
+                <li><a href="fernando-de-noronha.html">Fernando de Noronha</a></li>
+                <li><a href="salvador.html">Salvador</a></li>
+                <li><a href="chapada-diamantina.html">Chapada Diamantina</a></li>
+                <li><a href="bonito.html">Bonito</a></li>
+                <li><a href="lençóis-maranhenses.html">Lençóis Maranhenses</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="rio-de-janeiro">
+                <h2>Rio de Janeiro</h2>
+                <p>Rio de Janeiro é uma cidade litorânea localizada no estado do Rio de Janeiro, no Brasil.</p>
+                <img src="imagem/rio-de-janeiro.jpg" alt="Rio de Janeiro">
+            </section>
+            <section id="ouro-preto">
+                <h2>Ouro Preto</h2>
+                <p>Ouro Preto é uma cidade histórica localizada no estado de Minas Gerais, no Brasil.</p>
+                <img src="imagem/ouro-preto.jpg" alt="Ouro Preto">
+            </section>
+            <section id="cataratas-do-iguaçu">
+                <h2>Cataratas do Iguaçu</h2>
+                <p>As Cataratas do Iguaçu impressionam com suas gigantescas quedas d'água, natureza exuberante e paisagens deslumbrantes.</p>
+                <img src="imagem/cataratas-do-iguaçu.jpg" alt="Cataratas do Iguaçu">
+            </section>
+            <section id="floresta-amazonica">
+                <h2>Floresta Amazônica</h2>
+                <p>A Floresta Amazônica é um vasto bioma tropical, rica em biodiversidade, abrigando milhares de espécies e influenciando o clima global.</p>
+                <img src="imagem/floresta-amazonica.jpg" alt="Floresta Amazônica">
+            </section>
+            <section id="brasilia">
+                <h2>Brasília</h2>
+                <p>Brasília, capital do Brasil, destaca-se por sua arquitetura moderna, planejamento urbano inovador e obras de Oscar Niemeyer, símbolo do progresso.</p>
+                <img src="imagem/brasilia.jpg" alt="Brasília">
+            </section>
+            <section id="fernando-de-noronha">
+                <h2>Fernando de Noronha</h2>
+                <p>Fernando de Noronha é um arquipélago paradisíaco, famoso por suas praias de águas cristalinas, rica vida marinha e paisagens preservadas.</p>
+                <img src="imagem/fernando-de-noronha.jpg" alt="Fernando de Noronha">
+            </section>
+            <section id="salvador">
+                <h2>Salvador</h2>
+                <p>Salvador, capital da Bahia, encanta com seu patrimônio histórico, cultura afro-brasileira vibrante, culinária marcante e o famoso Carnaval.</p>
+                <img src="imagem/salvador.jpg" alt="Salvador">
+            </section>
+            <section id="chapada-diamantina">
+                <h2>Chapada Diamantina</h2>
+                <p>A Chapada Diamantina é um parque nacional com cachoeiras impressionantes, grutas fascinantes, trilhas desafiadoras e paisagens de tirar o fôlego no coração da Bahia.</p>
+                <img src="imagem/chapada-diamantina.jpg" alt="Chapada Diamantina">
+            </section>
+            <section id="bonito">
+                <h2>Bonito</h2>
+                <p>Bonito, no Mato Grosso do Sul, é famoso por suas águas cristalinas, cavernas submersas, rios repletos de peixes e ecoturismo sustentável.</p>
+                <img src="imagem/bonito.jpg" alt="Bonito">
+            </section>
+            <section id="lençóis-maranhenses">
+                <h2>Lençóis Maranhenses</h2>
+                <p>Os Lençóis Maranhenses são um deserto de dunas brancas com lagoas cristalinas, criando um cenário único e impressionante no litoral do Maranhão.</p>
+                <img src="imagem/lençóis-maranhenses.jpg" alt="Lençóis Maranhenses">
+            </section>
+        </main>
+        <footer>
+          <a href="links.html">Links</a> 
+          <a href="contato.html">Contato</a>
+          <a href="fotos.html">Fotos</a>
+          <p>&copy; 2024 10 Pontos Turísticos do Brasil</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ?t=84" target="_blank">Thiago Daniel De Souza RA:5157431</a>
+        </footer>
+    </div>
+</body>
 </html>

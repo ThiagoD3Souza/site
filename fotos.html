@@ -1,43 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, footer {
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style-type: none;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .uniube-logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<style>
-    body {
-        width:100vh;
-        height: 100vw;    
-        background-color: bisque;
-        background-size: 100%;
-        background-repeat: no-repeat; 
-  }
-</style>
 <body>
-    <header>
-      <h1>Fotos</h1>
-    </header>
-    <main>
-      <h2>Pontos Turísticos do Brasil</h2>
-      <ul>
-        <li><img src="imagem\rio-de-janeiro.jpg" alt="Rio de Janeiro"></li>
-        <li><img src="imagem\ouro-preto.jpg" alt="Ouro Preto"></li>
-        <li><img src="imagem\floresta-amazonica.jpg" alt="Floresta Amazonica"></li>
-        <li><img src="imagem\brasilia.jpg" alt="brasilia"></li>
-        <li><img src="imagem\fernando-de-noronha.jpg" alt="Fernando de Noronha"></li>
-        <li><img src="imagem\salvador.jpg" alt="salvador"></li>
-        <li><img src="imagem\chapada-diamantina.jpg" alt="Chapada Diamantina"></li>
-        <li> <img src="imagem\bonito.jpg" alt="bonito"></li>
-        <li> <img src="imagem\lençóis-maranhenses.jpg" alt="Lençóis Maranhenses"></li>
-        <li><img src="/imagem/rio-de-janeiro2.jpg" alt="Background Image"></li>
-        <li><img src="imagem/uniube.png"  width="100" alt="Logotipo Uniube" style="float:left"></li>
-      </ul>
-    </main>
-    <footer>
-        <br>
-        <a href="index.html">Pagina Inicial</a>
-              <p> &copy; 2024 Fotos</p>
-    </footer>
-  </body>
+    <div class="container">
+        <header>
+            <img src="imagem/uniube.png" alt="Logotipo Uniube" class="uniube-logo">
+            <h1>Fotos</h1>
+        </header>
+        <main>
+            <h2>Pontos Turísticos do Brasil</h2>
+            <ul class="gallery">
+                <li><img src="imagem/rio-de-janeiro.jpg" alt="Rio de Janeiro"></li>
+                <li><img src="imagem/ouro-preto.jpg" alt="Ouro Preto"></li>
+                <li><img src="imagem/floresta-amazonica.jpg" alt="Floresta Amazônica"></li>
+                <li><img src="imagem/brasilia.jpg" alt="Brasília"></li>
+                <li><img src="imagem/fernando-de-noronha.jpg" alt="Fernando de Noronha"></li>
+                <li><img src="imagem/salvador.jpg" alt="Salvador"></li>
+                <li><img src="imagem/chapada-diamantina.jpg" alt="Chapada Diamantina"></li>
+                <li><img src="imagem/bonito.jpg" alt="Bonito"></li>
+                <li><img src="imagem/lençóis-maranhenses.jpg" alt="Lençóis Maranhenses"></li>
+                <li><img src="/imagem/rio-de-janeiro2.jpg" alt="Rio de Janeiro 2"></li>
+            </ul>
+        </main>
+        <footer>
+            <p><a href="index.html">Página Inicial</a></p>
+            <p>&copy; 2024 Fotos</p>
+        </footer>
+    </div>
+</body>
 </html>

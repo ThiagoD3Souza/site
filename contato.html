@@ -1,55 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="CSS\style2.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('./imagem/200.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #7d5130;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.603);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        header, main, footer {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #7d5130;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #5d3c23;
+        }
+        a {
+            color: #7d5130;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<style>
-body {
-    width:100vh;
-    height: 100vw;    
-    background-image: url('./imagem/200.gif');
-    background-size:cover;
-    background-repeat: no-repeat; 
-    background-color: #7d5130;
-}
-</style>
 <body>
-    <header>
-      <h1>Contato</h1>
-    </header>
-    <main>
-      <h2>Informações de Contato</h2>
-      <ul>
-        <li><strong>Endereço:</strong> Rua dos Contatos, 123 - Centro</li>
-        <li><strong>Telefone:</strong> (99) 9999-9999</li>
-        <li><strong>E-mail:</strong> <a href="10coisabrasil@gmail.com">10coisabrasil@gmail.com</a></li>
-        <li><strong>Horário de Atendimento:</strong> Segunda a Sexta, 9h às 18h</li>
-      </ul>
-      <h2>Redes Sociais</h2>
-      <ul>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter (F)</a></li><br>
-      </ul><br>
-      <br><h2>Formulário de Contato</h2>
-      <form>
-        Digite seus dados e entraremos em contato:<Br>
-        <br><label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem"></textarea><br><br>
-        <input type="submit" value="Enviar">
-      </form>
-    </main>
-    <footer>
-        <br>
-        <a href="index.html">Pagina Inicial</a>
-      <p>&copy; 2024 Contato</p>
-    </footer>
-  </body>
+    <div class="container">
+        <header>
+            <h1>Contato</h1>
+        </header>
+        <main>
+            <h2>Informações de Contato:</h2><br>
+            <ul>
+                <li><strong>Endereço:</strong> Rua dos Contatos, 123 - Centro</li>
+                <li><strong>Telefone:</strong> (99) 9999-9999</li>
+                <li><strong>E-mail:</strong> <a href="mailto:10coisabrasil@gmail.com">10coisabrasil@gmail.com</a></li>
+                <li><strong>Horário de Atendimento:</strong> Segunda a Sexta, 9h às 18h</li>
+            </ul>
+            <h2>Redes Sociais:</h2>
+            <ul>
+                <br><li><a href="https://www.facebook.com" target="_blank"><br>Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter (F)</a></li><br>
+            </ul>
+
+            <form>
+                <p>Digite seus dados e entraremos em contato:</p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer>
+            <p><a href="index.html">Página Inicial</a></p>
+            <p>&copy; 2024 Contato</p>
+        </footer>
+    </div>
+</body>
 </html>

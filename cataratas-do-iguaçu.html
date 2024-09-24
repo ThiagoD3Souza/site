@@ -1,46 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cataratas Do Iguaçu</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-image: url('./imagem/rio-de-janeiro2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e6f3ff;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.685);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+        header, footer {
+            text-align: center;
+        }
+        h1 {
+            color: #005cb2;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <header>
-      <h1>Cataratas do Iguaçu</h1>
-    </header>
-    <main>
-      <h2>Pontos Turísticos</h2>
-      <ul>
-        <li>Cataratas do Iguaçu</li>
-        <li>Parque das Aves</li>
-        <li>Itaipu Dam</li>
-      </ul>
-      <h2>Preços de Estadia</h2>
-      <table>
-        <tr>
-          <th>Hotel</th>
-          <th>Preço por Noite</th>
-        </tr>
-        <tr>
-          <td>Belmond Hotel das Cataratas</td>
-          <td>R$ 800,00</td>
-        </tr>
-        <tr>
-          <td>Hotel Porto Canoas</td>
-          <td>R$ 500,00</td>
-        </tr>
-        <tr>
-          <td>Pousada do Iguaçu</td>
-          <td>R$ 350,00</td>
-        </tr>
-      </table>
-    </main>
-    <footer>
-        <br>
-        <a href="index.html">Pagina Inicial</a>
-      <p>&copy; 2024 Cataratas do Iguaçu</p>
-    </footer>
-  </body>
+    <div class="container">
+        <header>
+            <h1>Cataratas do Iguaçu</h1>
+        </header>
+        <main>
+            <h2>Pontos Turísticos</h2>
+            <ul>
+                <li>Cataratas do Iguaçu</li>
+                <li>Parque das Aves</li>
+                <li>Itaipu Dam</li>
+            </ul>
+            <h2>Preços de Estadia</h2>
+            <table>
+                <tr>
+                    <th>Hotel</th>
+                    <th>Preço por Noite</th>
+                </tr>
+                <tr>
+                    <td>Belmond Hotel das Cataratas</td>
+                    <td>R$ 800,00</td>
+                </tr>
+                <tr>
+                    <td>Hotel Porto Canoas</td>
+                    <td>R$ 500,00</td>
+                </tr>
+                <tr>
+                    <td>Pousada do Iguaçu</td>
+                    <td>R$ 350,00</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p><a href="index.html">Página Inicial</a></p>
+            <p>&copy; 2024 Cataratas do Iguaçu</p>
+        </footer>
+    </div>
+</body>
 </html>

@@ -1,46 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brasilia</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Brasília</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-image: url('./imagem/rio-de-janeiro2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.685);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, main, footer {
+            text-align: center;
+        }
+        h1 {
+            color: #1a5f7a;
+        }
+        h2 {
+            color: #2e8bc0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2e8bc0;
+            color: white;
+        }
+        a {
+            color: #1a5f7a;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-      <h1>Brasília</h1>
-    </header>
-    <main>
-      <h2>Pontos Turísticos</h2>
-      <ul>
-        <li>Catedral Metropolitana</li>
-        <li>Palácio da Alvorada</li>
-        <li>Parque da Cidade</li>
-      </ul>
-      <h2>Preços de Estadia</h2>
-      <table>
-        <tr>
-          <th>Hotel</th>
-          <th>Preço por Noite</th>
-        </tr>
-        <tr>
-          <td>Hotel Brasília Palace</td>
-          <td>R$ 600,00</td>
-        </tr>
-        <tr>
-          <td>Quality Hotel Brasília</td>
-          <td>R$ 450,00</td>
-        </tr>
-        <tr>
-          <td>Pousada do Lago</td>
-          <td>R$ 300,00</td>
-        </tr>
-      </table>
-    </main>
-    <footer>
-        <br>
-        <a href="index.html">Pagina Inicial</a>
-      <p>&copy; 2024 Brasília</p>
-    </footer>
-  </body>
+    <div class="container">
+        <header>
+            <h1>Brasília</h1>
+        </header>
+        <main>
+            <h2>Pontos Turísticos</h2>
+            <ul>
+                <li>Catedral Metropolitana</li>
+                <li>Palácio da Alvorada</li>
+                <li>Parque da Cidade</li>
+            </ul>
+            <h2>Preços de Estadia</h2>
+            <table>
+                <tr>
+                    <th>Hotel</th>
+                    <th>Preço por Noite</th>
+                </tr>
+                <tr>
+                    <td>Hotel Brasília Palace</td>
+                    <td>R$ 600,00</td>
+                </tr>
+                <tr>
+                    <td>Quality Hotel Brasília</td>
+                    <td>R$ 450,00</td>
+                </tr>
+                <tr>
+                    <td>Pousada do Lago</td>
+                    <td>R$ 300,00</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p><a href="index.html">Página Inicial</a></p>
+            <p>&copy; 2024 Brasília</p>
+        </footer>
+    </div>
+</body>
 </html>
